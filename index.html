@@ -1,12 +1,84 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Activities</title>
-</head>
-<body>
-    <a href="./First Session/Activity 1/act-1.html">Activity</a>
-    <a href="./First Session/Activity 2/act-2.html">Activity</a>
-</body>
-</html>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=, initial-scale=1.0">
+        <title>Activity 1</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <style>
+        section {
+        width: 900px;
+        margin: 0 auto;
+        height: 90vh;
+    }
+    .container {
+        max-width: 700px;
+        width: 100%;
+
+        height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        position:absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin:auto;
+
+    }
+    .profile {
+        display: flex;
+        justify-content: center;
+        align-items: center; /* Aligns items vertically in the center */
+        margin-top: 30px;
+    
+    }
+
+    .profile-pic {
+    width: 150px; /* Set the width of the profile picture */
+    height: 150px; /* Set the height of the profile picture */
+    border-radius: 50%; /* Makes the image circular */
+    margin-right: 10px; /* Space between the image and name */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Initial shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    }
+
+    .profile-pic:hover {
+    transform: scale(1.1); /* Slightly enlarge the image */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+    }
+
+    </style>
+    <body>
+
+        <section>
+            <div class="profile">
+                <img src="profile.jpeg" alt="Profile Picture" class="profile-pic">
+            </div>
+
+            <div class="container">
+            <table>
+                <tr>
+                    <th style="height: 40px;" > Table Activity</th>
+                    <th>Link</th>
+                </tr>
+                <tbody>
+                    <tr class="details-row">
+                        <td>Activity 1</td>
+                        <td class="hover-cell"><a href="./First Session/Activity 1/act-1.html" title="View Activity 1" >Details Act-1</a></td>
+                    </tr>
+                    <tr class="details-row">
+                        <td>Activity 2</td>
+                        <td class="hover-cell"><a href="./First Session/Activity 2/act-2.html" title="View Activity 2" >Details Act-2</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+        </section>
+
+    </body>
+    </html>

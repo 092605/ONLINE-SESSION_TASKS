@@ -1,0 +1,81 @@
+body {
+    background-image: url(bg.jpeg);
+    background-size: cover; /* Adjusted for full background cover */
+    margin: 0; /* Removed default margin */
+
+   
+}
+
+.body {
+    font-family: Arial, sans-serif;
+    background-color: lightpink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+table, th, td {
+    border-collapse: separate;
+    border-radius: 20px;
+    padding: 20px;
+    border-spacing: 20px;
+    background-color: rgba(247, 247, 247, 0.8);
+}
+
+table { 
+    width: 100%; /* Ensured the table width is set to 100% for proper centering */
+    font-size: 1.1rem;
+    box-shadow: 10px 10px 10px rgba(164, 140, 159, 0.1); /* Added box shadow for depth */
+    border-radius: 15px; /* Added border radius for softer edges */
+   
+}
+
+th, td {
+    padding: 15px;
+    text-align: center; /* Ensured text is center-aligned for better readability */
+    color: pink;
+}
+
+th {
+    background-color: rgb(109, 32, 45);
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+td:nth-child(2n+1) {
+    background-color: rgb(79, 69, 71);
+}
+
+td:nth-child(2n+2) {
+    background-color: rgb(241, 196, 203);
+}
+
+td, a {
+    padding: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(249, 249, 249);
+    transition: color 0.3s ease;
+}   
+
+a {
+    color: rgb(150, 70, 84);
+}
+
+td a:hover {
+    color: rgb(6, 0, 0);
+}
+
+.details-row .hover-cell {
+    transition: background-color 0.3s ease; /* Add transition for smooth effect */
+}
+
+.details-row .hover-cell:hover {
+    background-color: rgba(133, 91, 91, 0.8); /* Hover color for the second column */
+    transform: scale(1.1);
+}
+
+
+
+
