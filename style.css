@@ -1,8 +1,7 @@
     body {
         background-image: url(background.jpg);
-        background-size: cover; /* Adjusted for full background cover */
-        margin: 0; /* Removed default margin */
-    
+        background-size: cover; 
+        margin: 0; 
     }
 
     .body {

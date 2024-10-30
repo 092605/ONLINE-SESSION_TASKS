@@ -1,0 +1,136 @@
+
+body {
+  background-image: url(background.jpg);
+  background-size: cover; 
+  margin: 0; 
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+@media (max-width: 360px) {
+  body {
+    background-size: cover; /* Ensure it covers the viewport */
+    background-repeat: no-repeat; /* Still prevent repeating */
+    height: 100%;
+  }
+
+}
+
+/* Set the profile image size and make it circular */
+.Profile.Img img {
+  width: 40px; /* Set the desired width */
+  height: 40px; /* Set the desired height */
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Ensures the image doesn’t stretch */
+}
+
+/* Flex container to align items to the right */
+.Google.Header .col-md-12 {
+  display: flex;
+  align-items: center; 
+  justify-content: flex-end; /* Align items to the right */ 
+}
+
+/* Flexbox for profile and icons */
+.Header.Icons {
+  align-items: center; /* Centers icons vertically */
+  color: white;
+}
+
+.Profile.Img {
+  margin-left: 7px; /* Space between profile image and icons */
+  padding: 15px;
+}
+
+.Header.Icons i {
+  margin-left: 1px; /* Space between icons */
+  padding: 10px;
+}
+
+.custom-input {
+  border-radius: 25px; /* Adjust the radius value as needed */
+  height: 50px;
+}
+
+.input-group-text {
+  border-radius: 25px; /* Make the icons' backgrounds match the input */
+}
+
+.bookmarks {
+  width: 600px; /* Corrected from 400x to 400px */
+  margin-top: 300px; /* Adjust the margin to create space below the search */
+  margin-left: 35px;
+  font-family: sans-serif;
+  display: block;
+  position: absolute; /* Position it absolutely as well */
+  left: 50%;
+  transform: translateX(-50%);
+  top: 50px; /* Adjust this value based on the height of the Google Search */
+}
+
+.icon-container{
+  display: flex; /* Use flexbox to center content */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  text-align: center; /* Center text */
+  height: 100%; /* Ensure full height for centering */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  padding-top: 13px;
+  margin-top: 20px;
+  width: 100px;
+  height: 110px;
+  border-radius: 5px;
+}
+
+.container p {
+  color: white;
+  font-size: 0.8 rem;
+}
+
+.container i {
+  font-size: 1.5rem; /* Adjust icon size as needed */
+  margin-bottom: 5px; /* Space between icon and text */
+  font-family: sans-serif;
+  border-radius: 50%;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: #d3d3d3;
+}
+
+.container:hover {
+  
+  background-color: rgb(252, 216, 222);
+  opacity: 0.9;
+  transform: scale(1.05); /* Slightly scale up the container */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}
+
+.container p:hover{
+color: black;
+}
+
+.container:hover i {
+  transform: scale(1.1); /* Slightly scale up the icon */
+}
+
+.Profile.Img img:hover{
+  transform: scale(1.2); /* Slightly scale up the icon */
+}
+
+.Header.Icons i:hover {
+  color: #f1f1f1; /* Change color on hover */
+  transform: scale(); /* Slightly scale up the icon */
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add shadow on hover */
+}
+
