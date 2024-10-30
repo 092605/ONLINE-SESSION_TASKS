@@ -55,18 +55,6 @@ body {
   border-radius: 25px; /* Make the icons' backgrounds match the input */
 }
 
-.bookmarks {
-  width: 600px; /* Corrected from 400x to 400px */
-  margin-top: 300px; /* Adjust the margin to create space below the search */
-  margin-left: 35px;
-  font-family: sans-serif;
-  display: block;
-  position: absolute; /* Position it absolutely as well */
-  left: 50%;
-  transform: translateX(-50%);
-  top: 50px; /* Adjust this value based on the height of the Google Search */
-}
-
 .icon-container{
   display: flex; /* Use flexbox to center content */
   flex-direction: column; /* Stack items vertically */
